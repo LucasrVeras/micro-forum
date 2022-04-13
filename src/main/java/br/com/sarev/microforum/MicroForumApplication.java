@@ -8,16 +8,24 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
+
 /* 
- * Suporte para pegar da requisição os paramentros da url os campos de 
+ * Suporte para pegar da requisição os paramentros da url dos campos de 
  * paginação  e ordenação passando tudo para o SpringData
  **/ 
 @EnableSpringDataWebSupport
+
 /*
  * Habilita o uso de cache na aplicação
  * */
 @EnableCaching
+
+/* Habilita o Swagger2
+ * */
+@EnableSwagger2
 public class MicroForumApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
