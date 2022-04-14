@@ -9,5 +9,7 @@ import br.com.sarev.microforum.modelo.Topico;
 public interface TopicoRepository extends JpaRepository<Topico, Long>{
 
 	Page<Topico> findByCursoNome(String nomeCurso, Pageable pagina);
+
+	
 	
 }
