@@ -21,7 +21,7 @@ class CursoRepositoryTest {
 	@Test
     public void carregarCursoPeloSeuNome() {
 		
-		String nomeCurso = "JavaScript";
+		String nomeCurso = "HTML";
 		Curso curso = cursoRepository.findByNome(nomeCurso);
 		Assert.assertNotNull(curso);
 		Assert.assertEquals(nomeCurso ,curso.getNome());
